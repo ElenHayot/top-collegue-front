@@ -58,7 +58,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "top-collegue-front:build"
+            "browserTarget": "top-collegue-front:build",
+            "port": 4201
           },
           "configurations": {
             "production": {

@@ -1,0 +1,19 @@
+<div class="container">
+
+  <header><h2>Register yourself !</h2></header>
+
+
+  <div class="form-group">
+    <label for="enterEmail">Email</label>
+    <input type="email" name="email" class="form-control mx-sm-4" #email="ngModel" [(ngModel)]="participant.participantEmail">
+    <label for="enterPassword">Password</label>
+    <input type="password" name="password" class="form-control mx-sm-4" #password="ngModel" [(ngModel)]="participant.paticipantPassword">
+    <label for="enterPhoto">Your photo URL</label>
+    <input name="photoUrl" class="form-control mx-sm-4" #photoUrl="ngModel" [(ngModel)]="participant.participantPhotoUrl">
+  </div>
+  <div class="text-right">
+    <button class="btn btn-light" type="button" (click)=registerNewParticipant()>Register</button>
+  </div>
+
+
+</div>
